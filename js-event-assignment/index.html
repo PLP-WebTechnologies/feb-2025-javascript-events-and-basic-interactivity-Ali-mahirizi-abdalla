@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JS Playground</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive JavaScript Playground</h1>
+            <p>Explore various JavaScript event handlers and interactive elements</p>
+        </header>
+
+        <main>
+            <!-- Event Handling Section -->
+            <section class="card">
+                <h2>Event Handling</h2>
+                
+                <div class="event-grid">
+                    <button id="click-me" class="btn">Click Me</button>
+                    
+                    <div id="hover-area" class="hover-box">
+                        Hover Over Me
+                    </div>
+                    
+                    <input type="text" id="key-input" placeholder="Type something...">
+                    <div id="key-output" class="output-box"></div>
+                    
+                    <div id="secret-box" class="secret-trigger">
+                        Double Click for Magic!
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Elements Section -->
+            <section class="card">
+                <h2>Interactive Components</h2>
+                
+                <div class="component-grid">
+                    <button id="theme-toggle" class="btn">Toggle Dark Mode</button>
+                    
+                    <div class="gallery">
+                        <div class="gallery-viewer">
+                            <img src="IMG_20250421_143306.jpg" alt="Gallery image 1" class="active">
+                            <img src="" alt="Gallery image 2">
+                            <img src="images/photo3.jpg" alt="Gallery image 3">
+                        </div>
+                        <div class="gallery-controls">
+                            <button id="prev" class="btn small">Previous</button>
+                            <button id="next" class="btn small">Next</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-container">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="info">Info</button>
+                            <button class="tab-btn" data-tab="settings">Settings</button>
+                            <button class="tab-btn" data-tab="help">Help</button>
+                        </div>
+                        <div class="tab-content active" id="info">
+                            <p>Welcome to the info tab. Here you'll find basic information.</p>
+                        </div>
+                        <div class="tab-content" id="settings">
+                            <p>Adjust your settings from this panel.</p>
+                        </div>
+                        <div class="tab-content" id="help">
+                            <p>Need help? Contact our support team.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Validation Section -->
+            <section class="card">
+                <h2>Form Validation</h2>
+                
+                <form id="signup-form" class="form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name*</label>
+                        <input type="text" id="fullname" required>
+                        <span class="error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" required>
+                        <span class="error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password* (8+ characters)</label>
+                        <input type="password" id="password" required>
+                        <span class="error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn submit-btn">Sign Up</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
